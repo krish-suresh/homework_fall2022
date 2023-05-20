@@ -22,7 +22,8 @@ from cs285.infrastructure.dqn_utils import (
         get_wrapper_by_name,
         register_custom_envs,
 )
-
+import pendulum_envs
+from pendulum_envs.envs.single_inverted_pendulum_serial import SingleInvertedPendulumSerialEnv
 # how many rollouts to save as videos to tensorboard
 MAX_NVIDEO = 2
 MAX_VIDEO_LEN = 40 # we overwrite this in the code below
